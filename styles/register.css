@@ -29,7 +29,9 @@
   width: 100%;
   color: var(--white);
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
+  line-height: 6rem;
+  letter-spacing: -0.09375rem;
 }
 
 .left-description {
@@ -39,16 +41,21 @@
 }
 
 .right {
-  padding: 4rem 6rem;
+  padding-block: 4rem;
   min-height: 100vh;
   outline: 1px solid var(--black);
   background-color: #f5f5f5;
 }
 
+.right-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .left-copyright {
   color: #6b6b6b;
   font-size: 0.75rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .right-title {
@@ -158,9 +165,9 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-    *{
-        outline: none;
-    }
+  * {
+    outline: none;
+  }
 
   .container {
     grid-template-columns: 1fr;
