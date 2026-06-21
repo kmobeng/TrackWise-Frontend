@@ -88,6 +88,22 @@
     border: 0.667px solid rgba(17, 17, 17, 0.1);
     color: #4a4a4a;
   }
+
+  a {
+    font-size: 0.875rem;
+    color: #2563eb;
+  }
+}
+
+.form-input a:hover,
+.form-input a:focus-visible {
+  text-decoration: underline;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input:focus {
@@ -110,6 +126,11 @@ input:focus {
 .register-btn:hover,
 .register-btn:focus-visible {
   background-color: var(--blue-hover);
+}
+
+.google-btn:hover,
+.google-btn:focus-visible {
+  border: 0.667px solid #cdcdcd;
 }
 
 .or-container {
@@ -164,7 +185,7 @@ input:focus {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   * {
     outline: none;
   }
@@ -196,5 +217,24 @@ input:focus {
 
   .signin-container {
     padding-top: 2rem;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    min-height: 40vh;
+  }
+
+  .right {
+    outline: none;
+    min-height: auto;
   }
 }
