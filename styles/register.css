@@ -30,7 +30,7 @@
   color: var(--white);
   padding-top: 2rem;
   padding-bottom: 1rem;
-  line-height: 6rem;
+  line-height: 5.25rem;
   letter-spacing: -0.09375rem;
 }
 
@@ -121,6 +121,7 @@ input:focus {
   cursor: pointer;
   width: 100%;
   margin-top: 1rem;
+  font-weight: 500;
 }
 
 .register-btn:hover,
