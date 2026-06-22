@@ -56,6 +56,10 @@
   }
 }
 
+.resend-in{
+  color: #A0A0A0
+}
+
 @media (max-width: 768px) {
   .right {
     padding: 2rem;

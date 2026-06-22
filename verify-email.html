@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/register.css" />
     <link rel="stylesheet" href="styles/verify-email.css" />
-    <title>Register</title>
+    <title>Verify Email</title>
   </head>
   <body>
     <div class="container">
       <div class="left">
-        <a href="/index.html" class="logo">TrackWise</a>
+        <h1 class="logo">TrackWise</h1>
         <h2 class="left-title">ONE LAST STOP</h2>
         <p class="left-subtitle">Check your inbox, we sent a code.</p>
         <p class="left-description">
@@ -31,7 +31,7 @@
       </div>
       <div class="right">
         <div class="right-content">
-          <a href="/index.html" class="right-logo">TrackWise</a>
+          <h1 class="right-logo">TrackWise</h1>
           <h2 class="right-title">Verify your email</h2>
           <p class="right-description">
             Enter the 6-digit code we just sent to your email address.
@@ -47,7 +47,10 @@
             </div>
             <button class="register-btn">Verify and continue</button>
             <p class="right-signin">
-              Didn't receive it? <a href="/verify-email.html">Resend code</a>
+              Didn't receive it?
+              <span id="resend"
+                ><a href="/verify-email.html">Resend code</a></span
+              >
             </p>
           </div>
           <p class="back">
@@ -57,5 +60,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./js/verify-email.js"></script>
   </body>
 </html>
