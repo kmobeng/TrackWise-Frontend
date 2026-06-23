@@ -111,6 +111,12 @@ input:focus {
   border: 0.667px solid #2563eb;
 }
 
+.error-message {
+  color: #b12121d0;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
 .register-btn,
 .google-btn {
   background-color: #2563eb;

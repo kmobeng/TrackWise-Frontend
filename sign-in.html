@@ -36,16 +36,18 @@
           <p class="right-description">
             Use your email and password to sign in.
           </p>
-          <form>
+          <form id="sign-in-form" >
+            <p id="form-error" class="error-message"></p>
             <div class="form-input">
               <label for="email"> Email </label>
               <input
-                type="email"
+                type="text"
                 id="email"
                 name="email"
                 autocomplete="off"
                 placeholder="you@example.com"
               />
+              <p class="error-message" id="email-error"></p>
             </div>
             <div class="form-input">
               <div class="password">
@@ -59,8 +61,11 @@
                 name="password"
                 placeholder="Create a password"
               />
+              <p class="error-message" id="password-error"></p>
             </div>
-            <button type="submit" class="register-btn">Sign In</button>
+            <button type="submit" class="register-btn" id="sign-in-btn">
+              Sign In
+            </button>
           </form>
           <div class="or-container">
             <div class="empty"></div>
@@ -77,5 +82,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./js/sign-in.js"></script>
   </body>
 </html>
