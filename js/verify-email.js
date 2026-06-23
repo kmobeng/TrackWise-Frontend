@@ -68,7 +68,7 @@ boxes.forEach((box, index) => {
 
 resend.addEventListener("click", (e) => {
   e.preventDefault();
-  let time = 5;
+  let time = 30;
   resend.classList.add("resend-in");
   resend.innerText = `Resend code in ${time}s`;
 
@@ -77,6 +77,7 @@ resend.addEventListener("click", (e) => {
     resend.innerText = `Resend code in ${time}s`;
     if (time === 0) {
       clearInterval(IntervalId);
+      resend.classList.remove("resend-in");
       resend.innerHTML = `<a href="/verify-email.html">Resend code</a>`;
       return;
     }
