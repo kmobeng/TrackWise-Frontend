@@ -34,7 +34,8 @@
           <a href="/index.html" class="right-logo">TrackWise</a>
           <h2 class="right-title">Create your account</h2>
           <p class="right-description">No card, no commitment.</p>
-          <form>
+          <form id="register-form" >
+            <p id="form-error" class="error-message"></p>
             <div class="form-input">
               <label for="name"> Full name </label>
               <input
@@ -44,16 +45,18 @@
                 name="name"
                 placeholder="Obeng Kenneth Mireku"
               />
+              <p class="error-message" id="name-error"></p>
             </div>
             <div class="form-input">
               <label for="email"> Email </label>
               <input
-                type="email"
+                type="text"
                 id="email"
                 name="email"
                 autocomplete="off"
                 placeholder="you@example.com"
               />
+              <p class="error-message" id="email-error"></p>
             </div>
             <div class="form-input">
               <label for="password"> Password </label>
@@ -64,6 +67,7 @@
                 name="password"
                 placeholder="Create a password"
               />
+              <p class="error-message" id="password-error"></p>
             </div>
             <button type="submit" class="register-btn">Create Account</button>
           </form>
@@ -82,5 +86,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./js/register.js"></script>
   </body>
 </html>
