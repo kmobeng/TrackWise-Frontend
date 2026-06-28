@@ -59,25 +59,34 @@ export const verifyEmail = async (token) => {
     });
     return await response.json();
   } catch (error) {
-    console.error(error)
+    console.error(error);
     throw error;
   }
 };
 
 export const forgotPassword = async (email) => {
   const response = await fetch(`${BASE_URL}/auth/forgot-password`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email }),
   });
 
   const data = await response.json();
 
   if (!response.success) {
-    const error = new Error(data.message || 'Something went wrong');
+    const error = new Error(data.message || "Something went wrong");
     error.status = response.status;
     throw error;
   }
 
   return data;
+};
+
+export const resetPassword = async (token, password) => {
+  const response = await fetch(`${BASE_URL}/auth/reset-password/${token}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ password }),
+  });
+  return await response.json();
 };
