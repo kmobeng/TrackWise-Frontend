@@ -33,12 +33,12 @@ registerForm.addEventListener("submit", async (e) => {
 
   let hasError = false;
 
-  if (!nameInput.value) {
+  if (!nameInput.value.trim()) {
     nameError.textContent = "Name is required";
     hasError = true;
   }
 
-  if (!emailInput.value) {
+  if (!emailInput.value.trim()) {
     emailError.textContent = "Email is required";
     hasError = true;
   }

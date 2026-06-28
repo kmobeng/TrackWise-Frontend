@@ -30,6 +30,7 @@ forgotPasswordForm.addEventListener("submit", async (e) => {
   }
 });
 
+
 const showSuccessMessage = () => {
   rightContent.innerHTML = `
         <a href="/index.html" class="right-logo">TrackWise</a>

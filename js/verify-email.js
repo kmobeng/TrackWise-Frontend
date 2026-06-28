@@ -1,4 +1,5 @@
 import { verifyEmail, requestEmailVerification } from "./api.js";
+
 const boxes = document.querySelectorAll(".otp-box");
 const resend = document.getElementById("resend");
 const verifyForm = document.getElementById("verify-form");
